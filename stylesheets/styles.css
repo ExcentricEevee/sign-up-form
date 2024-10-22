@@ -1,0 +1,3 @@
+.lorem::after {
+  content: "styles is working"
+}

@@ -1,0 +1,3 @@
+.lorem::before {
+  content: "Reset is working "
+}
