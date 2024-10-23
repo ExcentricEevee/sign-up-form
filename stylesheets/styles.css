@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Kaushan";
+  src: 
+    url("../media/fonts/kaushanscript-regular-webfont.woff2") format("woff2"),
+    url("../media/fonts/kaushanscript-regular-webfont.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   height: 100%;
 
@@ -11,8 +20,13 @@ body {
 }
 
 .graphic-section {
+  font-size: 2rem;
   background-color: #1aba7a;
   width: var(--graphic-section-width);
+}
+
+.graphic-section p {
+  font-family: "Kaushan", sans-serif;
 }
 
 main {
