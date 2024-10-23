@@ -8,6 +8,7 @@
 }
 
 :root {
+  /* Give elements space to stretch out */
   height: 100%;
 
   --graphic-section-width: 35vw;
@@ -20,13 +21,19 @@ body {
 }
 
 .graphic-section {
-  font-size: 2rem;
-  background-color: #1aba7a;
+  background: #1aba7a url(../media/imgs/graphic_background.avif) center/100%;
   width: var(--graphic-section-width);
+  color: #ccc;
 }
 
 .graphic-section p {
+  font-size: 2rem;
   font-family: "Kaushan", sans-serif;
+  display: inline;
+}
+
+img {
+  width: 25%;
 }
 
 main {

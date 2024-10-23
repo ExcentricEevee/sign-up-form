@@ -17,7 +17,8 @@ body {
 }
 
 img, picture, video, canvas, svg {
-  display: block;
+  /* Default behavior of inline is desirable in this project - Curtis */
+  /* display: block; */
   max-width: 100%;
 }
 
