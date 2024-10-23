@@ -1,0 +1,21 @@
+:root {
+  height: 100%;
+
+  --graphic-section-width: 35vw;
+  --main-section-width: calc(100vw - var(--graphic-section-width));
+}
+
+body {
+  height: 100%;
+  display: flex;
+}
+
+.graphic-section {
+  background-color: #1aba7a;
+  width: var(--graphic-section-width);
+}
+
+main {
+  background-color: #ccc;
+  width: var(--main-section-width);
+}
