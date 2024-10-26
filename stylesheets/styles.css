@@ -10,6 +10,7 @@
 :root {
   /* Give elements space to stretch out */
   height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
 
   --graphic-section-width: 35vw;
   --main-section-width: calc(100vw - var(--graphic-section-width));
@@ -20,23 +21,53 @@ body {
   display: flex;
 }
 
+/* Graphical (left-side) section styling */
+
 .graphic-section {
-  background: #1aba7a url(../media/imgs/graphic_background.avif) center/100%;
+  background: url(../media/imgs/graphic_background.avif) center/100%;
   width: var(--graphic-section-width);
   color: #ccc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* Being a flex item necesitates defining the width */
+  width: var(--graphic-section-width);
+  padding: 12px 0;
+  background-color: #1118;
+  /* Get it away from the top, but don't center it either */
+  margin-top: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .graphic-section p {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Kaushan", sans-serif;
-  display: inline;
 }
 
 img {
-  width: 25%;
+  /* match the logo font size roughly; height scales automatically */
+  width: 15%;
 }
 
+footer {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ccc;
+}
+
+/* Main (right-side) section styling */
+
 main {
-  background-color: #ccc;
   width: var(--main-section-width);
 }
