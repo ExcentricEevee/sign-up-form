@@ -113,6 +113,31 @@ form > div {
   flex-direction: column;
 }
 
+label {
+  color: #333;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
 input {
   width: 250px;
+  height: 2rem;
+  padding: 0 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus {
+  border: 2px solid blue;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ccc;
+  background-color: #596D48;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 48px;
+  margin-bottom: 32px;
 }
