@@ -77,10 +77,17 @@ main {
 
 main > * {
   flex-grow: 1;
+  /* Force text to wrap sooner, align form inputs, etc */
+  width: 70%;
+}
+
+.form-section {
+  flex-grow: 0;
+  margin-bottom: 24px;
 }
 
 .hero-text,
-form p {
+.form-section > p {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -90,6 +97,22 @@ form p {
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  /* Force the text to wrap sooner */
-  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 48px;
+  padding: 24px 8px;
+  box-shadow: 0 2px 5px #aaa9;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 250px;
 }
