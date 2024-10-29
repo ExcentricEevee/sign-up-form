@@ -127,8 +127,17 @@ input {
   border-radius: 4px;
 }
 
+input:invalid {
+  border: 1px solid red;
+}
+
+/* This is intentionally defined after invalid
+   so that :focus always takes priority for accessibility */
 input:focus {
+  /* probably shouldn't use this but oh well */
+  outline: none;
   border: 2px solid blue;
+  box-shadow: 1px 1px 4px #999;
 }
 
 button {
@@ -140,4 +149,10 @@ button {
   border-radius: 8px;
   padding: 12px 48px;
   margin-bottom: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 700;
 }
